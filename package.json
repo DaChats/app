@@ -9,7 +9,7 @@
     "appId": "online.dachats.app",
     "productName": "Dachats",
     "win": {
-      "icon": "/logo.ico"
+      "icon": "logo.ico"
     }
   },
   "dependencies": {
@@ -87,7 +87,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder",
+    "build": "electron-builder --win",
     "start-forge": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
