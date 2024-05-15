@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "electron-updater": "^6.1.8",
+    "update-electron-app": "^3.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/publisher-github": "^7.4.0"
+  }
+}
