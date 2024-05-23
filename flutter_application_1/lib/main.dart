@@ -8,6 +8,8 @@ class WebViewExample extends StatefulWidget {
 }
 
 class _WebViewExampleState extends State<WebViewExample> {
+  late WebViewController _controller;
+
   @override
   void initState() {
     super.initState();
@@ -25,15 +27,32 @@ class _WebViewExampleState extends State<WebViewExample> {
       body: WebView(
         initialUrl: 'https://app.dachats.online',
         javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (WebViewController webViewController) async {
-          await webViewController.clearCache();
+        onWebViewCreated: (WebViewController webViewController) {
+          _controller = webViewController;
+          _clearCache();
+        },
+        onPageStarted: (String url) {
+          print('Page started loading: $url');
+        },
+        onPageFinished: (String url) {
+          print('Page finished loading: $url');
+        },
+        onWebResourceError: (WebResourceError error) {
+          print('Page resource error: ${error.description}');
         },
       ),
     );
   }
+
+  void _clearCache() async {
+    await _controller.clearCache();
+    final cookieManager = CookieManager();
+    await cookieManager.clearCookies();
+  }
 }
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MaterialApp(
     home: WebViewExample(),
   ));
