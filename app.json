@@ -1,36 +1,46 @@
 {
   "expo": {
     "name": "Dachats App",
-    "slug": "Dachats App",
-    "version": "1.0.0",
+    "slug": "dachats-app",
+    "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo64px.png",
-    "scheme": "Dachats App",
+    "icon": "./assets/images/Logo64px.png",
+    "scheme": "dachats-app",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/logo64px.png",
+      "image": "./assets/images/Logo64px.png",
       "resizeMode": "contain",
       "backgroundColor": "#252525"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.devbeni.dachatsapp"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo64px.png",
+        "foregroundImage": "./assets/images/Logo64px.png",
         "backgroundColor": "#252525"
-      }
+      },
+      "package": "com.devbeni.dachatsapp"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/logo64px.png"
+      "favicon": "./assets/images/Logo64px.png"
     },
     "plugins": [
       "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9c8761bf-610b-43ee-9250-17760fdb9ee3"
+      }
     }
   }
 }
