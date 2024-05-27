@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Dachats App",
+    "slug": "Dachats App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo64px.png",
+    "scheme": "Dachats App",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/logo64px.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#252525"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo64px.png",
+        "backgroundColor": "#252525"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo64px.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
