@@ -2,13 +2,13 @@
   "expo": {
     "name": "Dachats App",
     "slug": "dachats-app",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
-    "icon": "./assets/images/Logo64px.png",
+    "icon": "./assets/images/Logo128px.png",
     "scheme": "dachats-app",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/Logo64px.png",
+      "image": "./assets/images/Logo128px.png",
       "resizeMode": "contain",
       "backgroundColor": "#252525"
     },
@@ -18,7 +18,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/Logo64px.png",
+        "foregroundImage": "./assets/images/Logo128px.png",
         "backgroundColor": "#252525"
       },
       "package": "com.devbeni.dachatsapp"
@@ -26,7 +26,7 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/Logo64px.png"
+      "favicon": "./assets/images/Logo128px.png"
     },
     "plugins": [
       "expo-router"
